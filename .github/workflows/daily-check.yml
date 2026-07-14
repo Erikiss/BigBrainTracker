@@ -1,0 +1,67 @@
+name: Täglicher Publikations-Check
+
+on:
+  schedule:
+    - cron: "30 5 * * *"   # täglich 05:30 UTC (07:30 MESZ / 06:30 MEZ)
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Suchfenster arXiv (Tage)"
+        required: false
+        default: "14"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publication-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Publikationen abfragen
+        env:
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+        run: python -m tracker
+
+      - name: Stand committen (data/seen.json, LATEST.md)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen.json LATEST.md
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen zu committen."
+          else
+            git commit -m "chore: Publikationsstand vom $(date -u +%F)"
+            git push
+          fi
+
+      - name: Issue mit neuen Publikationen erstellen
+        if: ${{ hashFiles('report.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "publikationen" \
+            --color "1D76DB" \
+            --description "Automatische Publikations-Updates" \
+            --force || true
+          gh issue create \
+            --title "$(cat report_title.txt)" \
+            --body-file report.md \
+            --label "publikationen"

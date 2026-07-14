@@ -1,0 +1,298 @@
+# Beobachtete Personen für den täglichen Publikations-Check.
+# Quelle: BigBrains-Liste (dedupliziert; Kategorien als Tags zusammengeführt).
+#
+# Format je Eintrag:
+#   name:             Anzeigename, wird auch als Suchanfrage verwendet
+#   aliases:          weitere Schreibweisen (zusätzliche Suchanfragen + Namensabgleich),
+#                     z. B. Varianten mit mittlerem Initial ("Quoc V. Le")
+#   categories:       Tags, nur für die Gruppierung im Report
+#   sources:          Teilmenge von [arxiv, openalex]; Standard: beide.
+#                     Bei sehr häufigen Namen lohnt es sich, auf arxiv zu beschränken.
+#   arxiv_categories: Präfix-Filter für arXiv-Kategorien (z. B. ["cs.", "stat."]),
+#                     reduziert Fehltreffer bei Namensgleichheit
+#   openalex_id:      OpenAlex-Autoren-ID (z. B. A5023888391) für exakte Zuordnung statt
+#                     Namenssuche – zu finden über https://api.openalex.org/authors?search=Vorname+Nachname
+#   enabled:          false, um eine Person zu pausieren (Standard: true)
+#
+# Diakritika werden automatisch normalisiert (auch als zusätzliche Suchvariante
+# verwendet), mittlere Namen/Initialen werden beim Abgleich ignoriert.
+# Abgekürzte Vornamen ("J. Wei") werden bewusst NICHT akzeptiert, um Fehltreffer
+# bei häufigen Nachnamen zu vermeiden.
+
+researchers:
+  # ── Foundation Models & Deep Learning ────────────────────────────────
+  - name: Yann LeCun
+    categories: [foundation-models, theoretical-ai]
+  - name: Yoshua Bengio
+    categories: [foundation-models]
+  - name: Geoffrey Hinton
+    aliases: [Geoffrey E. Hinton]
+    categories: [foundation-models]
+  - name: Ilya Sutskever
+    categories: [foundation-models]
+  - name: Ashish Vaswani
+    categories: [foundation-models]
+  - name: Noam Shazeer
+    categories: [foundation-models]
+  - name: Aidan Gomez
+    aliases: [Aidan N. Gomez]
+    categories: [foundation-models]
+  - name: Łukasz Kaiser
+    categories: [foundation-models]
+  - name: Illia Polosukhin
+    categories: [foundation-models]
+  - name: Alec Radford
+    categories: [foundation-models]
+  - name: Dario Amodei
+    categories: [foundation-models]
+  - name: Chris Olah
+    aliases: [Christopher Olah]
+    categories: [foundation-models, interpretability-safety]
+  - name: Andrej Karpathy
+    categories: [foundation-models]
+  - name: Percy Liang
+    categories: [foundation-models, llms-scaling]
+  - name: Fei-Fei Li
+    aliases: [Li Fei-Fei]
+    categories: [foundation-models, computer-vision]
+  - name: Jürgen Schmidhuber
+    categories: [foundation-models, theoretical-ai]
+  - name: Demis Hassabis
+    categories: [foundation-models]
+  - name: Oriol Vinyals
+    categories: [foundation-models]
+  - name: Quoc Le
+    aliases: [Quoc V. Le]
+    categories: [foundation-models]
+  - name: Jeff Dean
+    aliases: [Jeffrey Dean]
+    categories: [foundation-models]
+  - name: David Silver
+    categories: [foundation-models, reinforcement-learning]
+    sources: [arxiv]            # häufiger Name; OpenAlex liefert viele Fremdtreffer
+    arxiv_categories: ["cs.", "stat."]
+  - name: Koray Kavukcuoglu
+    categories: [foundation-models]
+  - name: Jakob Uszkoreit
+    categories: [foundation-models]
+  - name: Sebastian Ruder
+    categories: [foundation-models]
+  - name: Tri Dao
+    categories: [foundation-models]
+  - name: Albert Gu
+    categories: [foundation-models]
+  - name: Tim Dettmers
+    categories: [foundation-models]
+  - name: Chelsea Finn
+    categories: [foundation-models]
+  - name: Sergey Levine
+    categories: [foundation-models]
+  - name: Pieter Abbeel
+    categories: [foundation-models]
+
+  # ── Reinforcement Learning ───────────────────────────────────────────
+  - name: Richard Sutton
+    aliases: [Richard S. Sutton]
+    categories: [reinforcement-learning, theoretical-ai]
+  - name: Andrew Barto
+    aliases: [Andrew G. Barto]
+    categories: [reinforcement-learning]
+  - name: Csaba Szepesvári
+    categories: [reinforcement-learning]
+  - name: Michael Littman
+    aliases: [Michael L. Littman]
+    categories: [reinforcement-learning]
+  - name: Marc Bellemare
+    aliases: [Marc G. Bellemare]
+    categories: [reinforcement-learning]
+  - name: Shie Mannor
+    categories: [reinforcement-learning]
+  - name: Emma Brunskill
+    categories: [reinforcement-learning]
+  - name: Satinder Singh
+    categories: [reinforcement-learning]
+    sources: [arxiv]            # sehr häufiger Name; nur arXiv + Kategorie-Filter
+    arxiv_categories: ["cs.", "stat."]
+  - name: Doina Precup
+    categories: [reinforcement-learning]
+
+  # ── Mechanistic Interpretability & AI Safety ─────────────────────────
+  - name: Neel Nanda
+    categories: [interpretability-safety]
+  - name: Anthropic (Interpretability Team)
+    enabled: false              # Organisation, kein Personenname – über Autorensuche
+    categories: [interpretability-safety]  # nicht auffindbar; Mitglieder (Olah, Marks, …) sind einzeln gelistet
+  - name: David Bau
+    categories: [interpretability-safety]
+  - name: Jacob Steinhardt
+    categories: [interpretability-safety]
+  - name: Owain Evans
+    categories: [interpretability-safety]
+  - name: Jan Leike
+    categories: [interpretability-safety]
+  - name: Paul Christiano
+    categories: [interpretability-safety]
+  - name: Ajeya Cotra
+    categories: [interpretability-safety]
+  - name: Nicholas Carlini
+    categories: [interpretability-safety]
+  - name: Boaz Barak
+    categories: [interpretability-safety]
+  - name: Dan Hendrycks
+    categories: [interpretability-safety]
+  - name: Samuel Marks
+    categories: [interpretability-safety]
+
+  # ── Theoretical AI / Intelligence ────────────────────────────────────
+  - name: Blaise Agüera y Arcas
+    categories: [theoretical-ai]
+  - name: François Chollet
+    categories: [theoretical-ai]
+  - name: Marcus Hutter
+    categories: [theoretical-ai]
+  - name: Shane Legg
+    categories: [theoretical-ai]
+  - name: Tim Rocktäschel
+    categories: [theoretical-ai]
+  - name: Karl Friston
+    aliases: [Karl J. Friston]
+    categories: [theoretical-ai, neuroscience]
+  - name: Judea Pearl
+    categories: [theoretical-ai, causality-statistics]
+  - name: Michael I. Jordan
+    categories: [theoretical-ai, optimization]
+    # In der Liste auch als "Michael Jordan" – gemeint ist der ML-Forscher (Berkeley),
+    # der mit "I." signiert. Kein Alias "Michael Jordan", um Namensvettern zu vermeiden.
+  - name: Zoubin Ghahramani
+    categories: [theoretical-ai]
+
+  # ── Causality, Statistics & Scientific Reasoning ─────────────────────
+  - name: Donald Rubin
+    aliases: [Donald B. Rubin]
+    categories: [causality-statistics]
+  - name: Trevor Hastie
+    categories: [causality-statistics]
+  - name: Robert Tibshirani
+    aliases: [Rob Tibshirani]
+    categories: [causality-statistics]
+  - name: Bradley Efron
+    categories: [causality-statistics]
+  - name: David MacKay
+    enabled: false              # David J. C. MacKay, verstorben 2016 – Namenssuche
+    categories: [causality-statistics]  # würde nur Fremdtreffer liefern
+  - name: David Spiegelhalter
+    aliases: [David J. Spiegelhalter]
+    categories: [causality-statistics]
+  - name: Ian Hacking
+    enabled: false              # Wissenschaftsphilosoph, verstorben 2023
+    categories: [causality-statistics]
+  - name: Andrew Gelman
+    categories: [causality-statistics]  # in der Liste als "Gelman (Andrew Gelman)"
+  - name: Cosma Shalizi
+    aliases: [Cosma Rohilla Shalizi]
+    categories: [causality-statistics]
+
+  # ── Optimization & Mathematics ───────────────────────────────────────
+  - name: Léon Bottou
+    categories: [optimization-mathematics]
+  - name: John Duchi
+    aliases: [John C. Duchi]
+    categories: [optimization-mathematics]
+  - name: Sanjeev Arora
+    categories: [optimization-mathematics]
+  - name: Michael Mahoney
+    aliases: [Michael W. Mahoney]
+    categories: [optimization-mathematics]
+  - name: Ben Recht
+    aliases: [Benjamin Recht]
+    categories: [optimization-mathematics]
+  - name: Sébastien Bubeck
+    categories: [optimization-mathematics]
+  - name: Francis Bach
+    categories: [optimization-mathematics]
+  - name: Emmanuel Candès
+    aliases: [Emmanuel J. Candès]
+    categories: [optimization-mathematics]
+  - name: Nathan Srebro
+    categories: [optimization-mathematics]
+
+  # ── Neuroscience & Brain-Inspired AI ─────────────────────────────────
+  - name: Terrence Sejnowski
+    aliases: [Terry Sejnowski, Terrence J. Sejnowski]
+    categories: [neuroscience]
+  - name: Tomaso Poggio
+    categories: [neuroscience]
+  - name: Bruno Olshausen
+    aliases: [Bruno A. Olshausen]
+    categories: [neuroscience]
+  - name: Konrad Kording
+    aliases: [Konrad P. Kording, Konrad Körding]
+    categories: [neuroscience]
+  - name: Blake Richards
+    aliases: [Blake A. Richards]
+    categories: [neuroscience]
+  - name: Surya Ganguli
+    categories: [neuroscience]
+  - name: Eve Marder
+    categories: [neuroscience]
+  - name: Haim Sompolinsky
+    categories: [neuroscience]
+  - name: David Marr
+    enabled: false              # historisch (1945–1980)
+    categories: [neuroscience]
+
+  # ── Computer Vision & Multimodal ─────────────────────────────────────
+  - name: Jitendra Malik
+    categories: [computer-vision]
+  - name: Kaiming He
+    categories: [computer-vision]
+  - name: Ross Girshick
+    categories: [computer-vision]
+  - name: Ross Wightman
+    categories: [computer-vision]
+  - name: Antonio Torralba
+    categories: [computer-vision]
+  - name: Cordelia Schmid
+    categories: [computer-vision]
+  - name: Alexei Efros
+    aliases: [Alexei A. Efros, Alyosha Efros]
+    categories: [computer-vision]
+  - name: Saining Xie
+    categories: [computer-vision]
+  - name: Phillip Isola
+    categories: [computer-vision]
+
+  # ── LLMs & Scaling ───────────────────────────────────────────────────
+  - name: Jared Kaplan
+    categories: [llms-scaling]
+  - name: Tom Brown
+    aliases: [Tom B. Brown]
+    categories: [llms-scaling]
+    sources: [arxiv]            # sehr häufiger Name; nur arXiv + Kategorie-Filter
+    arxiv_categories: ["cs.", "stat."]
+  - name: Jack Rae
+    aliases: [Jack W. Rae]
+    categories: [llms-scaling]
+  - name: William Fedus
+    aliases: [Liam Fedus]
+    categories: [llms-scaling]
+  - name: Hyung Won Chung
+    aliases: [Hyungwon Chung]
+    categories: [llms-scaling]
+  - name: Jason Wei
+    categories: [llms-scaling]
+  - name: Ed Chi
+    aliases: [Ed H. Chi]
+    categories: [llms-scaling]
+  - name: Samyam Rajbhandari
+    categories: [llms-scaling]
+  - name: Jason Weston
+    categories: [llms-scaling]
+
+  # ── Eigene Liste ─────────────────────────────────────────────────────
+  - name: Ian Gertz
+    categories: [eigene-liste]  # Falls hier jemand Bestimmtes gemeint ist: ggf. Schreibweise
+                                # prüfen oder openalex_id ergänzen
+  - name: Timothy Michael Bennett
+    aliases: [Michael Timothy Bennett]
+    categories: [eigene-liste]  # vermutlich Michael Timothy Bennett (ANU, AGI-Theorie)
