@@ -1,27 +1,12 @@
-# 🧠 Neue Publikationen (5) – 2026-07-27
+# 🧠 Neue Publikationen (2) – 2026-07-28
 
-_Letzter Lauf mit Funden: 2026-07-27 09:45 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-07-28 08:20 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-07-27**: **5** neue Publikation(en) von **5** beobachteten Person(en).
+Automatische Abfrage vom **2026-07-28**: **2** neue Publikation(en) von **1** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Cosma Shalizi _(causality-statistics)_
-
-- **2026-07-24** · [Estimating dynamic models by matching random features](https://arxiv.org/abs/2607.21916) — arXiv · stat.ME
-
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-07-24** · [Robust and self-healing flexible transparent electrodes based on nanocellulose-mediated dual-dynamic networks with capillary-driven junction welding](https://doi.org/10.1016/j.carbpol.2026.125693) — OpenAlex · Carbohydrate Polymers
-
-### Michael Mahoney _(optimization-mathematics)_
-
-- **2026-07-24** · [LatentFlow: Visual Analytics for Latent Space Analysis in Molecular Graph Neural Networks](https://arxiv.org/abs/2607.21941) — arXiv · cs.LG
-
-### Robert Tibshirani _(causality-statistics)_
-
-- **2026-07-23** · [Another look at predicting molecular breast cancer subtypes from the METABRIC data](https://arxiv.org/abs/2607.21814) — arXiv · stat.AP
-
-### Yann LeCun _(foundation-models, theoretical-ai)_
-
-- **2026-07-24** · [Music-JEPA: Learning a World Model of Sound from Action](https://arxiv.org/abs/2607.22000) — arXiv · cs.SD
+- **2026-07-27** · [Mental and behavioral disorder-related mortality among US adolescents, 1999–2023](https://doi.org/10.1038/s41390-026-05343-3) — OpenAlex · Pediatric Research
+- **2026-07-26** · [Isotope‐Labeled Methanol‐Derived <i>O</i> ‐Alkylisoureas as Versatile and Practical Agents for d <sub>3</sub> ‐Methylation, <sup>13</sup> C‐Methylation, and <sup>13</sup> CD <sub>3</sub> ‐Methylation](https://doi.org/10.1002/anie.7843825) — OpenAlex · Angewandte Chemie International Edition
