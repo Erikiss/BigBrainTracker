@@ -1,22 +1,20 @@
-# 🧠 Neue Publikationen (6) – 2026-07-30
+# 🧠 Neue Publikationen (4) – 2026-07-31
 
-_Letzter Lauf mit Funden: 2026-07-30 08:17 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-07-31 08:36 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-07-30**: **6** neue Publikation(en) von **3** beobachteten Person(en).
+Automatische Abfrage vom **2026-07-31**: **4** neue Publikation(en) von **3** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-07-28** · [Effects of Sequential Fermentation with Metschnikowia sp. Mp58 Belonging to the M. pulcherrima Clade and Lactiplantibacillus plantarum Cro3-2 on the Quality Characteristics of a Fermented Apple Beverage](https://doi.org/10.3390/fermentation12080350) — OpenAlex · Fermentation
-- **2026-07-28** · [An Energy-Driven Adaptive Reconstruction Method for Non-Cooperative Satellite Point Clouds](https://doi.org/10.3390/aerospace13080676) — OpenAlex · Aerospace
-- **2026-07-28** · [Efficient homologous replacement and deletion of large genomic fragments through template‐jumping prime editing in rice](https://doi.org/10.1111/nph.71470) — OpenAlex · New Phytologist
-- **2026-07-28** · [Amifostine alleviates ionizing radiation-induced small intestinal motility dysfunction in mice by remodeling the structure of the enteric nervous system](https://doi.org/10.1007/s00418-026-02518-1) — OpenAlex · Histochemistry and Cell Biology
+- **2026-07-29** · [Short-term efficacy and safety of 5MHz fractional microneedle radiofrequency for facial rejuvenation: a prospective study](https://doi.org/10.6084/m9.figshare.33111193.v1) — OpenAlex · Figshare
+- **2026-07-29** · [Coupling Trend–Pattern Dynamics for Synergistic Governance: A Multi-Scale Assessment of Carbon Emissions and Ecosystem Services in the Yellow River Basin](https://doi.org/10.3390/land15081359) — OpenAlex · Land
 
-### Karl Friston _(theoretical-ai, neuroscience)_
+### Michael I. Jordan _(theoretical-ai, optimization)_
 
-- **2026-07-27** · [Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach](https://doi.org/10.1162/neco.a.1537) — OpenAlex · Neural Computation
+- **2026-07-29** · [Post-Training at the Edge of Detectability: A Game-Theoretic Approach to Fine-Tuning](https://arxiv.org/abs/2607.26358) — arXiv · cs.LG
 
-### Yann LeCun _(foundation-models, theoretical-ai)_
+### Quoc Le _(foundation-models)_
 
-- **2026-07-28** · [Unpacking Open Source Artificial Intelligence: Toward a Framework for Openness in Foundation Models](https://doi.org/10.1145/3778264) — OpenAlex · Communications of the ACM
+- **2026-07-26** · [Multi-year assessment of atmospheric mercury deposition in a tropical urban megacity: Flux variability, driving factors, and washout processes](https://doi.org/10.1016/j.atmosenv.2026.122257) — OpenAlex · Atmospheric Environment
