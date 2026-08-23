@@ -1,20 +1,31 @@
-# 🧠 Neue Publikationen (7) – 2026-08-22
+# 🧠 Neue Publikationen (9) – 2026-08-23
 
-_Letzter Lauf mit Funden: 2026-08-22 06:10 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-08-23 06:13 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-08-22**: **7** neue Publikation(en) von **2** beobachteten Person(en).
+Automatische Abfrage vom **2026-08-23**: **9** neue Publikation(en) von **5** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
+### Andrew Gelman _(causality-statistics)_
+
+- **2026-08-21** · [The ladder of abstraction in statistical graphics](https://doi.org/10.1080/00031305.2026.2723043) — OpenAlex · The American Statistician
+
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-08-20** · [Organoids-on-a-Chip: An Integrating New Technology for Drug Development](https://doi.org/10.3390/ijms27167432) — OpenAlex · International Journal of Molecular Sciences
-- **2026-08-20** · [Assessment of risk factors in persistent subsolid pulmonary nodules based on CT dynamic follow-up](https://doi.org/10.1186/s12880-026-02694-5) — OpenAlex · BMC Medical Imaging
-- **2026-08-20** · [Carotid Artery Stenting in Symptomatic Carotid Stenosis With Chronic Kidney Disease: A Single-Center Retrospective Study](https://doi.org/10.1177/15266028261479105) — OpenAlex · Journal of Endovascular Therapy
-- **2026-08-20** · [Towards continual stance detection via Dual Prototype Aware Mixture of Experts Network](https://doi.org/10.1016/j.ipm.2026.105103) — OpenAlex · Information Processing & Management
-- **2026-08-20** · [Flexomagnetic Effect in Wrinkled SrRuO 3 Thin Films](https://doi.org/10.1002/aelm.70544) — OpenAlex · Advanced Electronic Materials
-- **2026-08-20** · [Multiresonant Membrane Metasurfaces for Multifunctional Molecular Absorption Sensing and Real Time Biochemical Tracking](https://doi.org/10.1002/adma.202522281) — OpenAlex · Advanced Materials
+- **2026-08-21** · [Effectiveness of a direct switch to Bictegravir/Emtricitabine/Tenofovir alafenamide in people living with HIV experiencing first-line treatment failure: a real-world study](https://doi.org/10.1186/s12879-026-14251-0) — OpenAlex · BMC Infectious Diseases
+- **2026-08-21** · [Abscisic acid–regulated stability of CmABF1 and CmBRM modulates salt tolerance in chrysanthemum via epigenetic regulation of CmHSFA4](https://doi.org/10.1126/sciadv.aed2521) — OpenAlex · Science Advances
+- **2026-08-21** · [Enterovirus infections in children](https://doi.org/10.1002/ped4.70081) — OpenAlex · Pediatric Investigation
+- **2026-08-20** · [Additional file 1 of Assessment of risk factors in persistent subsolid pulmonary nodules based on CT dynamic follow-up](https://doi.org/10.6084/m9.figshare.33304471) — OpenAlex · Figshare
 
-### Yann LeCun _(foundation-models, theoretical-ai)_
+### Nicholas Carlini _(interpretability-safety)_
 
-- **2026-08-20** · [Advancing human-centric AI for robust X-ray analysis through holistic self-supervised learning](https://doi.org/10.1038/s41467-026-76076-4) — OpenAlex · Nature Communications
+- **2026-08-20** · [Aged Mitochondrial DNA Is Associated With Aberrant Acute Exercise‐Induced Redox Responses in Human Skeletal Muscle](https://doi.org/10.1111/acel.70678) — OpenAlex · Aging Cell
+
+### Percy Liang _(foundation-models, llms-scaling)_
+
+- **2026-08-20** · [Insights from law for building and evaluating AI systems](https://doi.org/10.25740/dn179pk0699) — OpenAlex · Stanford Digital Repository
+
+### Quoc Le _(foundation-models)_
+
+- **2026-08-20** · [Transition from M-shaped to Gaussian fiber alignment governed by inlet orientation in fused filament fabrication](https://doi.org/10.60893/figshare.pof.c.8635973) — OpenAlex · AIP Publishing
+- **2026-08-20** · [Supplementary Material](https://doi.org/10.60893/figshare.pof.33164414.v1) — OpenAlex · AIP Publishing
