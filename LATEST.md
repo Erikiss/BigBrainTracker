@@ -1,15 +1,15 @@
-# 🧠 Neue Publikationen (2) – 2026-08-24
+# 🧠 Neue Publikationen (2) – 2026-08-25
 
-_Letzter Lauf mit Funden: 2026-08-24 06:23 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-08-25 06:18 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-08-24**: **2** neue Publikation(en) von **2** beobachteten Person(en).
+Automatische Abfrage vom **2026-08-25**: **2** neue Publikation(en) von **2** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Blake Richards _(neuroscience)_
+### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-08-14** · [Code for: Exponentiated gradients support effective learning in biologically relevant scenarios with brain-like synaptic distributions](https://doi.org/10.5281/zenodo.21936978) — OpenAlex · Open MIND
+- **2026-08-24** · [A Genome-Resolved Metagenomic Atlas of Pacific Deep-Sea Polymetallic Nodules and Associated Sediments](https://doi.org/10.1038/s41597-026-08067-5) — OpenAlex · Scientific Data
 
-### Terrence Sejnowski _(neuroscience)_
+### Yann LeCun _(foundation-models, theoretical-ai)_
 
-- **2026-07-29** · [Dynamical Mechanisms for Coordinating Long-term Working Memory Based on the Precision of Spike Timing in Cortical Neurons.](https://pubmed.ncbi.nlm.nih.gov/41445814) — OpenAlex · PubMed
+- **2026-08-24** · [LpWM: A Case for Sparse Representations in World Models](https://arxiv.org/abs/2608.22764) — arXiv · cs.LG
