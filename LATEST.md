@@ -1,32 +1,22 @@
-# 🧠 Neue Publikationen (7) – 2026-08-28
+# 🧠 Neue Publikationen (6) – 2026-08-30
 
-_Letzter Lauf mit Funden: 2026-08-28 17:52 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-08-30 10:54 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-08-28**: **7** neue Publikation(en) von **6** beobachteten Person(en).
+Automatische Abfrage vom **2026-08-30**: **6** neue Publikation(en) von **3** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Boaz Barak _(interpretability-safety)_
-
-- **2026-08-27** · [Patient and caregiver knowledge as a driver of basic science](https://doi.org/10.1038/s41572-026-00732-8) — OpenAlex · Nature Reviews Disease Primers
-
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-08-27** · [Reconstructing Residual‐Solvent‐Involved Li + Coordination in PVDF‐HFP Polymer Electrolytes for Stable Lithium Metal Batteries](https://doi.org/10.1002/adfm.78015) — OpenAlex · Advanced Functional Materials
+- **2026-08-28** · [Supplemental Material for: Integrating MRI-Based Deep Learning and Radiomics to Predict Treatment Response in Hepatocellular Carcinoma Receiving Combined Systemic and Locoregional Therapies: A Multicenter Study](https://doi.org/10.6084/m9.figshare.33368326.v1) — OpenAlex · Figshare
+- **2026-08-28** · [Optical fragile zero-watermarking scheme for medical image tampering detection](https://doi.org/10.1088/1402-4896/aea02a) — OpenAlex · Physica Scripta
+- **2026-08-28** · [High-pressure chemiluminescence diagnostics in an axisymmetric constant volume combustion bomb with synchronized axial ignition](https://doi.org/10.1088/1361-6501/aea015) — OpenAlex · Measurement Science and Technology
+- **2026-08-28** · [Cell-specific cPGES control of glucocorticoid receptor function drives MASLD progression](https://doi.org/10.1016/j.celrep.2026.117901) — OpenAlex · Cell Reports
 
-### Michael I. Jordan _(theoretical-ai, optimization)_
+### Karl Friston _(theoretical-ai, neuroscience)_
 
-- **2026-08-27** · [Principal-Agent Hypothesis Testing](https://doi.org/10.1080/01621459.2026.2724031) — OpenAlex · Journal of the American Statistical Association
+- **2026-08-28** · [Inferential planning in the frontal cortex](https://doi.org/10.1016/j.celrep.2026.117905) — OpenAlex · Cell Reports
 
-### Quoc Le _(foundation-models)_
+### Percy Liang _(foundation-models, llms-scaling)_
 
-- **2026-08-27** · [Accelerating Scientific Research with Gemini in the Real-World](https://arxiv.org/abs/2608.26701) — arXiv · cs.AI
-- **2026-08-24** · [Size-resolved atmospheric elements in Southern Vietnam: source characteristics, urban-industrial contrasts, respiratory deposition, and multi-pathway health risk assessment](https://doi.org/10.1016/j.apr.2026.103188) — OpenAlex · Atmospheric Pollution Research
-
-### Richard Sutton _(reinforcement-learning, theoretical-ai)_
-
-- **2026-08-27** · [Emerging CCR5-Based Therapeutic Potential of JAK/STAT Inhibitors and CCR5Δ32 Hematopoietic Stem Cell Transplantation](https://doi.org/10.3390/v18090933) — OpenAlex · Viruses
-
-### Yann LeCun _(foundation-models, theoretical-ai)_
-
-- **2026-08-27** · [LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics](https://arxiv.org/abs/2608.27395) — arXiv · cs.CV
+- **2026-08-28** · [Multimodal Foundation Models for Healthcare](https://doi.org/10.1201/9781003471165-2) — OpenAlex
