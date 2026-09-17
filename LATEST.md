@@ -1,38 +1,40 @@
-# 🧠 Neue Publikationen (13) – 2026-09-16
+# 🧠 Neue Publikationen (12) – 2026-09-17
 
-_Letzter Lauf mit Funden: 2026-09-16 10:28 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-09-17 10:36 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-09-16**: **13** neue Publikation(en) von **6** beobachteten Person(en).
+Automatische Abfrage vom **2026-09-17**: **12** neue Publikation(en) von **7** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Aidan Gomez _(foundation-models)_
+### Bradley Efron _(causality-statistics)_
 
-- **2026-09-12** · [North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)](https://arxiv.org/abs/2609.13916) — arXiv · cs.CL
+- **2026-09-16** · [Epithelial-mesenchymal Wnt crosstalk directs planar cell polarity in the developing cochlea](https://doi.org/10.1038/s41467-026-77522-z) — OpenAlex · Nature Communications
 
-### Emma Brunskill _(reinforcement-learning)_
+### Cordelia Schmid _(computer-vision)_
 
-- **2026-09-14** · [Specifying Reward Functions for RL Without Environment Sampling](https://arxiv.org/abs/2609.15544) — arXiv · cs.LG
+- **2026-09-16** · [PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection](https://arxiv.org/abs/2609.19143) — arXiv · cs.CV
+
+### Doina Precup _(reinforcement-learning)_
+
+- **2026-09-01** · [Soft Condorcet Optimization for Ranking of General Agents (Extended Abstract)](https://doi.org/10.24963/ijcai.2026/925) — OpenAlex
 
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-09-15** · [Datasets and code for Climate warming amplifies variability of grassland production](https://doi.org/10.5281/zenodo.22690642) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
-- **2026-09-14** · [PMN-PT Nanocrystal Composite Optical Fibers with Enhanced Nonlinear Response](https://doi.org/10.1364/ol.611967) — OpenAlex · Optics Letters
-- **2026-09-14** · [A novel timing skew calibration method based on autocorrelation function for time-interleaved ADCs](https://doi.org/10.1117/12.3122956) — OpenAlex
-- **2026-09-14** · [Coordinated current-limiting and transient stability control of grid-forming VSGs under grid-voltage sags](https://doi.org/10.1016/j.epsr.2026.114193) — OpenAlex · Electric Power Systems Research
-- **2026-09-13** · [Engineering a Hydrazone-Linked Covalent Organic Framework as a Cooperative Macromolecular Ligand for Recyclable Cu-Catalyzed Chan–Lam Coupling](https://doi.org/10.1021/acs.inorgchem.6c04497) — OpenAlex · Inorganic Chemistry
-- **2026-09-12** · [CCS deployment policy choices under regional heterogeneity: Economy-wide impacts and spillovers in China](https://doi.org/10.1016/j.enpol.2026.115616) — OpenAlex · Energy Policy
+- **2026-09-16** · [Interpretation of chirality imprinted on photoelectron momentum spectra by three-dimensional light fields](https://doi.org/10.5281/zenodo.22781903) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
+- **2026-09-16** · [Fabrication of Millimeter‐Sized Prismatic Silicon Carbide Fibers via a Catalyst‐Free Thermal Evaporation Method](https://doi.org/10.1111/ijac.70272) — OpenAlex · International Journal of Applied Ceramic Technology
+- **2026-09-16** · [A rapid UAV LiDAR-based method for sea ice thickness retrieval in the Arctic](https://doi.org/10.1080/2150704x.2026.2731606) — OpenAlex · Remote Sensing Letters
+- **2026-09-16** · [Correction: GRIM-19 in asthenozoospermia regulates GC-2 spd cell proliferation, apoptosis and migration](https://doi.org/10.1038/s41598-026-66477-2) — OpenAlex · Scientific Reports
+- **2026-09-16** · [REMP: A transformer with role-specific experts and multi-scale positional encoding for autonomous multi-UAV air combat](https://doi.org/10.1007/s44443-026-01157-9) — OpenAlex · Journal of King Saud University - Computer and Information Sciences
+- **2026-09-16** · [Co‐Assembled Helical Polymer Nanofibers Enable Efficient CO 2 Photoreduction Through Interchain Energy Transfer](https://doi.org/10.1002/ange.7599397) — OpenAlex · Angewandte Chemie
 
-### Michael Mahoney _(optimization-mathematics)_
+### John Duchi _(optimization-mathematics)_
 
-- **2026-09-14** · [LLM Inference in a Flash!](https://arxiv.org/abs/2609.16161) — arXiv · cs.LG
-- **2026-08-31** · [Residuals are not enough : limits of physics-informed pre-training for scientific foundation models](https://eprints.soton.ac.uk/514185/1/Residuals_Are_Not_Enough_Limits_of_Physics_Informed_Pre_Training_for_Scientific_Foundation_Models.pdf) — OpenAlex · ePrints Soton (University of Southampton)
+- **2026-09-15** · [Random tilts to find stationary points in stochastic convex optimization](https://arxiv.org/abs/2609.17798) — arXiv · math.OC
 
-### Phillip Isola _(computer-vision)_
+### Richard Sutton _(reinforcement-learning, theoretical-ai)_
 
-- **2026-09-14** · [The Neverwhere Visual Parkour Benchmark Suite](https://arxiv.org/abs/2609.16443) — arXiv · cs.RO
+- **2026-09-16** · [mRNA processing in cancer immunotherapy: emerging targets, resistance mechanisms, and therapeutic opportunities](https://doi.org/10.3389/fimmu.2026.1889279) — OpenAlex · Frontiers in Immunology
 
-### Quoc Le _(foundation-models)_
+### Yann LeCun _(foundation-models, theoretical-ai)_
 
-- **2026-09-09** · [Effect of Graphene Functionalization on the Microwave Absorption Performance of Ni0.2Zn0.8Fe2O4/graphene Nanoplatelet Composites](https://doi.org/10.58334/vrtc.jtst.vol.015.934) — OpenAlex · Tạp chí Khoa học và Công nghệ nhiệt đới
-- **2026-09-09** · [Survey of Antibiotic Resistance of Acinetobacter Baumannii and Pseudomonas Aeruginosa at Ninh Thuan Province General Hospital in Vietnam in 2023](https://doi.org/10.2174/0118715303390623251206133856) — OpenAlex · Endocrine Metabolic & Immune Disorders - Drug Targets
+- **2026-09-15** · [TabPFN-3.5: Technical Report](https://arxiv.org/abs/2609.17895) — arXiv · cs.LG
