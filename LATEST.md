@@ -1,40 +1,31 @@
-# 🧠 Neue Publikationen (12) – 2026-09-17
+# 🧠 Neue Publikationen (9) – 2026-09-18
 
-_Letzter Lauf mit Funden: 2026-09-17 10:36 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-09-18 10:15 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-09-17**: **12** neue Publikation(en) von **7** beobachteten Person(en).
+Automatische Abfrage vom **2026-09-18**: **9** neue Publikation(en) von **5** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Bradley Efron _(causality-statistics)_
+### Chelsea Finn _(foundation-models)_
 
-- **2026-09-16** · [Epithelial-mesenchymal Wnt crosstalk directs planar cell polarity in the developing cochlea](https://doi.org/10.1038/s41467-026-77522-z) — OpenAlex · Nature Communications
+- **2026-09-16** · [Reinforcement Learning for Real-Time Vision-Language-Action Policies](https://arxiv.org/abs/2609.18207) — arXiv · cs.RO
 
-### Cordelia Schmid _(computer-vision)_
+### David Bau _(interpretability-safety)_
 
-- **2026-09-16** · [PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection](https://arxiv.org/abs/2609.19143) — arXiv · cs.CV
-
-### Doina Precup _(reinforcement-learning)_
-
-- **2026-09-01** · [Soft Condorcet Optimization for Ranking of General Agents (Extended Abstract)](https://doi.org/10.24963/ijcai.2026/925) — OpenAlex
+- **2026-09-16** · [Using OCR Heads to Verbalize Image Semantics](https://arxiv.org/abs/2609.18823) — arXiv · cs.CV
 
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-09-16** · [Interpretation of chirality imprinted on photoelectron momentum spectra by three-dimensional light fields](https://doi.org/10.5281/zenodo.22781903) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
-- **2026-09-16** · [Fabrication of Millimeter‐Sized Prismatic Silicon Carbide Fibers via a Catalyst‐Free Thermal Evaporation Method](https://doi.org/10.1111/ijac.70272) — OpenAlex · International Journal of Applied Ceramic Technology
-- **2026-09-16** · [A rapid UAV LiDAR-based method for sea ice thickness retrieval in the Arctic](https://doi.org/10.1080/2150704x.2026.2731606) — OpenAlex · Remote Sensing Letters
-- **2026-09-16** · [Correction: GRIM-19 in asthenozoospermia regulates GC-2 spd cell proliferation, apoptosis and migration](https://doi.org/10.1038/s41598-026-66477-2) — OpenAlex · Scientific Reports
-- **2026-09-16** · [REMP: A transformer with role-specific experts and multi-scale positional encoding for autonomous multi-UAV air combat](https://doi.org/10.1007/s44443-026-01157-9) — OpenAlex · Journal of King Saud University - Computer and Information Sciences
-- **2026-09-16** · [Co‐Assembled Helical Polymer Nanofibers Enable Efficient CO 2 Photoreduction Through Interchain Energy Transfer](https://doi.org/10.1002/ange.7599397) — OpenAlex · Angewandte Chemie
-
-### John Duchi _(optimization-mathematics)_
-
-- **2026-09-15** · [Random tilts to find stationary points in stochastic convex optimization](https://arxiv.org/abs/2609.17798) — arXiv · math.OC
+- **2026-09-17** · [PAXIP1-PAGR1 directs cohesin recruitment during break-induced telomere repair](https://doi.org/10.64898/2026.09.14.751543) — OpenAlex · bioRxiv (Cold Spring Harbor Laboratory)
+- **2026-09-17** · [CCDC 2582691: Experimental Crystal Structure Determination](https://doi.org/10.5517/ccdc.csd.cc2sphmm) — OpenAlex · The Cambridge Structural Database
+- **2026-09-17** · [Pulsed Field versus Radiofrequency Ablation for Paroxysmal AF: Randomized Comparison of Hemolysis and Myocardial Injury Using Circular PFA Catheter](https://doi.org/10.21203/rs.3.rs-10643297/v1) — OpenAlex · Research Square
+- **2026-09-17** · [Research on the Current Development Status and Application Schemes of Low-Altitude Economy During the Construction Period of Railway Engineering](https://doi.org/10.1007/978-3-032-32237-1_14) — OpenAlex · Sustainable civil infrastructures
 
 ### Richard Sutton _(reinforcement-learning, theoretical-ai)_
 
-- **2026-09-16** · [mRNA processing in cancer immunotherapy: emerging targets, resistance mechanisms, and therapeutic opportunities](https://doi.org/10.3389/fimmu.2026.1889279) — OpenAlex · Frontiers in Immunology
+- **2026-09-01** · [A Selective PanK3 Activator Restores Coenzyme A in Cellular and Mouse Models of Pantothenate Kinase–Associated Neurodegeneration](https://doi.org/10.1016/j.jbc.2026.113567) — OpenAlex · Journal of Biological Chemistry
 
-### Yann LeCun _(foundation-models, theoretical-ai)_
+### Shie Mannor _(reinforcement-learning)_
 
-- **2026-09-15** · [TabPFN-3.5: Technical Report](https://arxiv.org/abs/2609.17895) — arXiv · cs.LG
+- **2026-09-17** · [Reinforcement learning for initializing genetic algorithms in vehicle routing](https://doi.org/10.1038/s44488-026-00019-7) — OpenAlex · Communications AI & Computing
+- **2026-09-17** · [COMPASS: Ordered Clustered Routing at 100K Scale](https://arxiv.org/abs/2609.20352) — arXiv · cs.LG
