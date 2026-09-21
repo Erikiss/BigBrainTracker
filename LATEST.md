@@ -1,17 +1,11 @@
-# 🧠 Neue Publikationen (4) – 2026-09-19
+# 🧠 Neue Publikationen (1) – 2026-09-21
 
-_Letzter Lauf mit Funden: 2026-09-19 09:58 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-09-21 11:18 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-09-19**: **4** neue Publikation(en) von **2** beobachteten Person(en).
+Automatische Abfrage vom **2026-09-21**: **1** neue Publikation(en) von **1** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Fei-Fei Li _(foundation-models, computer-vision)_
+### Quoc Le _(foundation-models)_
 
-- **2026-09-18** · [Deep learning-based radiomics and pathomics for decoding tumor microenvironment and predicting immunotherapy outcomes in gastric cancer](https://doi.org/10.3389/fimmu.2026.1970256) — OpenAlex · Frontiers in Immunology
-- **2026-09-18** · [Tissue-resident memory T cells in the nasal mucosa: gatekeepers of chronicity and relapse in allergic rhinitis](https://doi.org/10.3389/fimmu.2026.1955001) — OpenAlex · Frontiers in Immunology
-- **2026-09-18** · [Psychometric properties of the Preschool Anxiety Scale in 2-6-year-old Chinese autistic children](https://doi.org/10.1186/s12888-026-08666-x) — OpenAlex · BMC Psychiatry
-
-### Francis Bach _(optimization-mathematics)_
-
-- **2026-09-18** · [Differentiable latent structure discovery for interpretable forecasting in clinical time series](https://doi.org/10.1186/s13040-026-00606-5) — OpenAlex · BioData Mining
+- **2026-09-18** · [Improving the Predictive Performance of Bootstrap Aggregating by Dirichlet Resampling](https://arxiv.org/abs/2609.21454) — arXiv · stat.ML
