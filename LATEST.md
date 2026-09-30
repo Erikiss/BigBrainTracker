@@ -1,55 +1,69 @@
-# 🧠 Neue Publikationen (15) – 2026-09-29
+# 🧠 Neue Publikationen (23) – 2026-09-30
 
-_Letzter Lauf mit Funden: 2026-09-29 11:47 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-09-30 11:34 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-09-29**: **15** neue Publikation(en) von **11** beobachteten Person(en).
+Automatische Abfrage vom **2026-09-30**: **23** neue Publikation(en) von **13** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Csaba Szepesvári _(reinforcement-learning)_
+### Blaise Agüera y Arcas _(theoretical-ai)_
 
-- **2026-09-27** · [On the Two Faces of Adam in Separable Linear Classification](https://arxiv.org/abs/2609.33904) — arXiv · cs.LG
+- **2026-09-28** · [Reasoning with Neural Cellular Automata](https://arxiv.org/abs/2609.36126) — arXiv · cs.LG
 
-### Ed Chi _(llms-scaling)_
+### Blake Richards _(neuroscience)_
 
-- **2026-09-25** · [LLM-Based User Personas for Recommendations at Scale](https://doi.org/10.1145/3773078.3831903) — OpenAlex
+- **2026-09-28** · [Reasoning with Neural Cellular Automata](https://arxiv.org/abs/2609.36126) — arXiv · cs.LG
+
+### Dan Hendrycks _(interpretability-safety)_
+
+- **2026-09-28** · [CheatBench: Measuring Reward Gaming in AI Agents](https://arxiv.org/abs/2609.36308) — arXiv · cs.AI
 
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-09-28** · [DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318) — arXiv · cs.RO
-- **2026-09-27** · [Context dependent interpretation of stress granule transcript signatures in colorectal cancer: analysis code and processed data](https://doi.org/10.5281/zenodo.22985583) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
-- **2026-09-27** · [Compact low-voltage waveplate-free burst-mode EO Q-switched Nd:YAG laser based on a thermally self-biased PIN-PMN-32PT crystal](https://doi.org/10.1016/j.optlastec.2026.116466) — OpenAlex · Optics & Laser Technology
-- **2026-09-27** · [Local‐distortion regulation of small‐polaron transport: A design degree of freedom for thermoelectric oxides](https://doi.org/10.1002/inf2.70190) — OpenAlex · InfoMat
+- **2026-09-29** · [Targeting KPNA2 Enhances Bortezomib Anti-myeloma activity Through Suppressing Non- Canonical NF-κB-Mediated Autophagy in Multiple Myeloma](https://doi.org/10.21203/rs.3.rs-10959728/v1) — OpenAlex · Research Square
+- **2026-09-29** · [TFAR-UDP: A time-frequency adaptive domain generalization framework for cross-condition fault diagnosis of transmission systems](https://doi.org/10.1177/14759217261490355) — OpenAlex · Structural Health Monitoring
+- **2026-09-29** · [What Was the Real "Thorn in the Flesh"? Multimodality Imaging of Presumed Cardiac Migration of an Iodine-125 Brachytherapy Seed.](https://doi.org/10.1093/ehjci/jeag269) — OpenAlex · PubMed
+- **2026-09-29** · [Barley husk degradation driven by Fusarium graminearum xylanase triggers premature yeast flocculation factor generation](https://doi.org/10.1007/s43393-026-00555-4) — OpenAlex · Systems Microbiology and Biomanufacturing
+- **2026-09-29** · [Practices and Challenges of Smart Care Services for Older Adults in Chongqing: A Phenomenological Study of Home-dwelling Older Adults’ Experiences](https://doi.org/10.1007/s12126-026-09681-9) — OpenAlex · Ageing International
+- **2026-09-29** · [Clinical outcomes of T-cell acute lymphoblastic leukemia versus T-cell lymphoblastic lymphoma after allogeneic hematopoietic stem cell transplantation](https://doi.org/10.1007/s00277-026-07295-4) — OpenAlex · Annals of Hematology
+- **2026-09-29** · [T$^2$Mem: Learning Test-Time Memory for Robotics](https://arxiv.org/abs/2609.36720) — arXiv · cs.RO
+
+### Geoffrey Hinton _(foundation-models)_
+
+- **2026-09-28** · [What if automating AI R&D triggers an intelligence explosion?](https://arxiv.org/abs/2609.36054) — arXiv · cs.CY
+
+### Jason Weston _(llms-scaling)_
+
+- **2026-09-29** · [Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning](https://arxiv.org/abs/2609.38147) — arXiv · cs.AI
+
+### Jitendra Malik _(computer-vision)_
+
+- **2026-09-29** · [Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation](https://arxiv.org/abs/2609.38172) — arXiv · cs.RO
+- **2026-09-29** · [OmniTaskonomy: When Does Visual Generation Improve Visual Understanding?](https://arxiv.org/abs/2609.38079) — arXiv · cs.CV
 
 ### John Duchi _(optimization-mathematics)_
 
-- **2026-09-26** · [How Reusable Are Benchmarks with Richer Feedback?](https://arxiv.org/abs/2609.32109) — arXiv · cs.LG
+- **2026-09-01** · [PPI++: Efficient prediction-powered inference](https://doi.org/10.1214/26-aoas2215) — OpenAlex · The Annals of Applied Statistics
 
-### Jürgen Schmidhuber _(foundation-models, theoretical-ai)_
+### Pieter Abbeel _(foundation-models)_
 
-- **2026-09-28** · [Predictive Semantic Safety: From Visual Physical Reasoning to Safety-Critical Control](https://arxiv.org/abs/2609.34356) — arXiv · cs.RO
+- **2026-09-28** · [World model for robot learning: A comprehensive survey](https://doi.org/10.1177/02783649261488980) — OpenAlex · The International Journal of Robotics Research
 
-### Marcus Hutter _(theoretical-ai)_
+### Quoc Le _(foundation-models)_
 
-- **2026-09-28** · [From cacophony to hierarchy: a principled framework for assessing AI consciousness](https://arxiv.org/abs/2609.35618) — arXiv · cs.AI
-- **2026-09-28** · [Understanding Generalization Requires Universal Induction](https://arxiv.org/abs/2609.34458) — arXiv · stat.ML
+- **2026-09-29** · [FROM LANDLOCKED TO LAND-LINKED: HAS THE LAO-CHINA HIGH SPEED RAILWAY TRANSFORMED PROVINCIAL ECONOMIES IN ITS SHORT TERM OF OPERATION?](https://doi.org/10.37569/dalatuniversity.16.3.1724(2026)) — OpenAlex · Dalat University Journal of Science
+- **2026-09-28** · [Phytochemical profiling, antioxidant, α-glucosidase inhibitory, and anti-inflammatory activities of Grangea maderaspatana essential oil: Experimental and molecular docking studies](https://doi.org/10.17129/botsci.3906) — OpenAlex · Botanical Sciences
 
-### Michael Mahoney _(optimization-mathematics)_
+### Sanjeev Arora _(optimization-mathematics)_
 
-- **2026-09-27** · [An Adaptive, Parallel, and Inexact Newton Method for Large-scale Nonlinear Optimal Control](https://arxiv.org/abs/2609.33206) — arXiv · math.OC
-
-### Phillip Isola _(computer-vision)_
-
-- **2026-09-28** · [Reinforcement Learning from Intermediate Renders for Image-to-Code Generation](https://arxiv.org/abs/2609.34587) — arXiv · cs.CV
-
-### Shane Legg _(theoretical-ai)_
-
-- **2026-09-28** · [From cacophony to hierarchy: a principled framework for assessing AI consciousness](https://arxiv.org/abs/2609.35618) — arXiv · cs.AI
-
-### Tomaso Poggio _(neuroscience)_
-
-- **2026-09-24** · [Connectome-based biophysical modeling of a figure-ground discrimination circuit](https://doi.org/10.64898/2026.09.17.752514) — OpenAlex · bioRxiv (Cold Spring Harbor Laboratory)
+- **2026-09-29** · [Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning](https://arxiv.org/abs/2609.38147) — arXiv · cs.AI
+- **2026-09-20** · [Training hepatologists in alcohol use disorder management: a pilot study.](https://doi.org/10.1093/alcalc/agag063) — OpenAlex · PubMed
 
 ### Yann LeCun _(foundation-models, theoretical-ai)_
 
-- **2026-09-28** · [AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving](https://arxiv.org/abs/2609.34085) — arXiv · cs.RO
+- **2026-09-29** · [SCOPE: Observation-Conditioned Full-Target Prediction for Sparse PDE Inference](https://arxiv.org/abs/2609.36527) — arXiv · cs.LG
+- **2026-09-29** · [PDE-OBS: Controlled Evaluation Across Observation Patterns](https://arxiv.org/abs/2609.36521) — arXiv · cs.LG
+
+### Yoshua Bengio _(foundation-models)_
+
+- **2026-09-28** · [What if automating AI R&D triggers an intelligence explosion?](https://arxiv.org/abs/2609.36054) — arXiv · cs.CY
