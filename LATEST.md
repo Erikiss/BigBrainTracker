@@ -1,30 +1,44 @@
-# 🧠 Neue Publikationen (8) – 2026-10-29
+# 🧠 Neue Publikationen (10) – 2026-10-30
 
-_Letzter Lauf mit Funden: 2026-10-29 11:58 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-10-30 11:50 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-10-29**: **8** neue Publikation(en) von **5** beobachteten Person(en).
+Automatische Abfrage vom **2026-10-30**: **10** neue Publikation(en) von **9** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Dario Amodei _(foundation-models)_
+### Antonio Torralba _(computer-vision)_
 
-- **2026-10-27** · [White House Accord on Super Intelligence](https://doi.org/10.70777/si.v3i4.18908) — OpenAlex · SuperIntelligence - Robotics - Safety & Alignment
+- **2026-10-29** · [Elucidating the Design Space of LM Data Attribution](https://arxiv.org/abs/2610.40655) — arXiv · cs.CL
+
+### Ashish Vaswani _(foundation-models)_
+
+- **2026-10-28** · [Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI](https://arxiv.org/abs/2610.38095) — arXiv · cs.CL
+
+### Chelsea Finn _(foundation-models)_
+
+- **2026-10-29** · [Cross-Controller Transfer via In-Context Behavior Adaptation](https://arxiv.org/abs/2610.39280) — arXiv · cs.RO
+
+### David Bau _(interpretability-safety)_
+
+- **2026-10-29** · [Elucidating the Design Space of LM Data Attribution](https://arxiv.org/abs/2610.40655) — arXiv · cs.CL
 
 ### Doina Precup _(reinforcement-learning)_
 
-- **2026-10-26** · [Freeze, Don't Clone: Fine-Tuning with Expressive Policies Without Retaining Offline Data](https://arxiv.org/abs/2610.36247) — arXiv · cs.LG
+- **2026-10-28** · [The Prestige: Benchmarking Cognitive Visual Reasoning using Magic Tricks](https://arxiv.org/abs/2610.38103) — arXiv · cs.CV
+- **2026-10-27** · [DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks](https://arxiv.org/abs/2610.37799) — arXiv · cs.RO
 
-### Fei-Fei Li _(foundation-models, computer-vision)_
+### Jason Weston _(llms-scaling)_
 
-- **2026-11-01** · [Immunomodulatory and Gut Microbiota-regulating Effects of Low-molecular-weight Sodium Alginate in Cyclophosphamide-induced Immunosuppressed Mice](https://doi.org/10.13386/j.issn1002-0306.2025110345) — OpenAlex · DOAJ (DOAJ: Directory of Open Access Journals)
-- **2026-10-28** · [Dataset for “Constructing Interconnected CNT Networks in Binder Jetted Ceramics via Porosity Engineering: Porosity, CNT Morphology, and Electrical Conductivity”](https://doi.org/10.6084/m9.figshare.34789227) — OpenAlex · Figshare
-- **2026-10-28** · [Keratinocyte-derived CHI3L2 reprograms phospholipid metabolism to promote skin inflammation in psoriasis](https://doi.org/10.1126/scitranslmed.aef3967) — OpenAlex · Science Translational Medicine
+- **2026-10-28** · [Aligning Autoresearch: Co-Improvement between Agents and Humans](https://arxiv.org/abs/2610.38882) — arXiv · cs.AI
 
-### Michael I. Jordan _(theoretical-ai, optimization)_
+### John Duchi _(optimization-mathematics)_
 
-- **2026-10-27** · [Mitigating bias in spatial transcriptomic pipelines via human feedback with CSDE](https://doi.org/10.1186/s13059-026-04302-9) — OpenAlex · Genome biology
+- **2026-10-29** · [What's Old Is New: Improved Learning from Small-Group Tutorials](https://arxiv.org/abs/2610.39538) — arXiv · stat.OT
 
-### Robert Tibshirani _(causality-statistics)_
+### Sergey Levine _(foundation-models)_
 
-- **2026-10-27** · [ptLasso: Pretraining the Lasso](https://doi.org/10.32614/cran.package.ptlasso) — OpenAlex
-- **2026-10-06** · [ARMD-Predict: multi-site machine learning to predict antibiotic resistance before culture results](https://doi.org/10.48550/arxiv.2610.32998) — OpenAlex · arXiv (Cornell University)
+- **2026-10-28** · [Robotic Data Inoculation](https://arxiv.org/abs/2610.39054) — arXiv · cs.RO
+
+### Yann LeCun _(foundation-models, theoretical-ai)_
+
+- **2026-10-29** · [Proving and Improving the Platonic Representation Hypothesis with JEPAs](https://arxiv.org/abs/2610.39302) — arXiv · cs.AI
