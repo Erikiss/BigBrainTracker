@@ -1,51 +1,21 @@
-# 🧠 Neue Publikationen (11) – 2026-11-10
+# 🧠 Neue Publikationen (5) – 2026-11-11
 
-_Letzter Lauf mit Funden: 2026-11-10 11:08 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-11-11 12:24 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-11-10**: **11** neue Publikation(en) von **11** beobachteten Person(en).
+Automatische Abfrage vom **2026-11-11**: **5** neue Publikation(en) von **3** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
-### Antonio Torralba _(computer-vision)_
-
-- **2026-11-09** · [Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality](https://arxiv.org/abs/2611.11962) — arXiv · cs.LG
-
-### Demis Hassabis _(foundation-models)_
-
-- **2026-11-06** · [Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws](https://arxiv.org/abs/2611.10202) — arXiv · cs.LG
-
-### Donald Rubin _(causality-statistics)_
-
-- **2026-11-09** · [Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks](https://arxiv.org/abs/2611.12690) — arXiv · stat.ME
-
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-11-09** · [Embodied First Exam](https://arxiv.org/abs/2611.12177) — arXiv · cs.RO
+- **2026-11-09** · [Maternal genetic diversity and population structure of four mandarin fish ( Siniperca chuatsi ) populations inferred from mitochondrial D-loop sequences](https://doi.org/10.46989/001c.173408) — OpenAlex · Israeli Journal of Aquaculture - Bamidgeh
+- **2026-11-09** · [Segmented G(E) Function Compensation Method for Gamma Dose Rate Meters Considering Asymmetric Error Distribution Across Energy Regions](https://doi.org/10.3390/sym18111874) — OpenAlex · Symmetry
+- **2026-11-09** · [Integrative Network Pharmacology and Transcriptomic Analysis Prioritizes CCR1 and C5AR1 as Candidate Thromboinflammatory Targets Shared by Panax notoginseng Saponins and Stroke-Relevant Drugs in Ischemic Stroke](https://doi.org/10.1007/s12031-026-02625-7) — OpenAlex · Journal of Molecular Neuroscience
 
-### Jürgen Schmidhuber _(foundation-models, theoretical-ai)_
+### Michael Mahoney _(optimization-mathematics)_
 
-- **2026-11-07** · [Sampling Is Not Curiosity: Why LLM Agents Should Investigate](https://arxiv.org/abs/2611.10501) — arXiv · cs.AI
+- **2026-11-09** · [Continuous Horizon Forecasting](https://arxiv.org/abs/2611.13228) — arXiv · stat.ML
 
-### Owain Evans _(interpretability-safety)_
+### Nicholas Carlini _(interpretability-safety)_
 
-- **2026-11-06** · [Homeopathic Learning: Diluting poisoned fine-tuning data can strengthen its effect](https://arxiv.org/abs/2611.10110) — arXiv · cs.AI
-
-### Phillip Isola _(computer-vision)_
-
-- **2026-11-09** · [Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality](https://arxiv.org/abs/2611.11962) — arXiv · cs.LG
-
-### Pieter Abbeel _(foundation-models)_
-
-- **2026-11-09** · [Embodied First Exam](https://arxiv.org/abs/2611.12177) — arXiv · cs.RO
-
-### Ross Wightman _(computer-vision)_
-
-- **2026-11-08** · [LAION-Audio-XL: A Web-Scale Corpus and Scaling Studies for Contrastive Language-Audio Pretraining](https://arxiv.org/abs/2611.11592) — arXiv · cs.SD
-
-### Shie Mannor _(reinforcement-learning)_
-
-- **2026-11-08** · [NCCL-BOT: Closing the Loop on NCCL's Cost Model with Online Bandits](https://arxiv.org/abs/2611.11303) — arXiv · cs.DC
-
-### Yann LeCun _(foundation-models, theoretical-ai)_
-
-- **2026-11-08** · [Self-Supervised Collapse Prevention with Score-Based Entropy Maximization](https://arxiv.org/abs/2611.11379) — arXiv · cs.LG
+- **2026-11-09** · [Exposure is All You Need: Using LLMs to Identify Critical Endpoints at Internet Scale](https://doi.org/10.1145/3847352.3848119) — OpenAlex · ACM Workshop on Artificial Intelligence and Security (AISec)
