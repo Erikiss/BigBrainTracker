@@ -4,7 +4,7 @@
 [![CI](https://github.com/Erikiss/BigBrainTracker/actions/workflows/ci.yml/badge.svg)](https://github.com/Erikiss/BigBrainTracker/actions/workflows/ci.yml)
 
 Fragt **einmal täglich** ab, ob eine der beobachteten Personen aus der
-BigBrains-Liste ([`researchers.yaml`](researchers.yaml), zurzeit 103 aktive
+BigBrains-Liste ([`researchers.yaml`](researchers.yaml), zurzeit 169 aktive
 Einträge) etwas Neues publiziert hat – und meldet Funde als **GitHub-Issue**.
 
 ## Wie es funktioniert
@@ -45,7 +45,12 @@ Check jederzeit von Hand anstoßen (optional mit größerem Suchfenster).
 ## Personen pflegen
 
 Einträge in [`researchers.yaml`](researchers.yaml) ergänzen oder anpassen –
-mehr braucht es nicht. Minimalform ist nur der Name:
+mehr braucht es nicht. Die Goodfire-Erweiterung vom 15.11.2026 umfasst
+66 zusätzliche Personen mit belegten Interpretability-Forschungsbeiträgen.
+[Quellen und Auswahlkriterien](docs/goodfire-researchers.md) dokumentieren
+jeden Eintrag, Namensvarianten sowie den zeitlichen Goodfire-Bezug.
+
+Minimalform ist nur der Name:
 
 ```yaml
 researchers:
@@ -82,6 +87,9 @@ zuverlässigste Weg, Personen mit häufigen Namen sauber zu treffen.
   Timothy Bennett (ANU, AGI-Theorie) – als Alias hinterlegt. Zu „Ian Gertz“
   ist keine eindeutige Person auffindbar – ggf. Schreibweise korrigieren oder
   `openalex_id` ergänzen.
+- **Goodfire-Blogs:** Die Personenliste erweitert die Autorensuche auf arXiv
+  und OpenAlex. Goodfires Website wird nicht direkt abgefragt; reine
+  Forschungs-Blogposts können deshalb fehlen.
 - **Latenz:** arXiv listet neue Einreichungen meist binnen 1–2 Werktagen,
   OpenAlex indexiert Journals teils mit Wochen Verzug (daher das größere
   Suchfenster dort).
@@ -95,8 +103,8 @@ python -m tracker --check-config                               # nur YAML validi
 python -m unittest discover -s tests                           # Tests
 ```
 
-Ein voller Lauf (`python -m tracker`) dauert wegen der arXiv-Rate-Limits
-(1 Anfrage / 3 s) etwa 6–8 Minuten und schreibt `report.md`,
+Die Dauer eines vollen Laufs (`python -m tracker`) wächst mit der Zahl der
+Personen und Namensvarianten (arXiv: 1 Anfrage / 3 s). Er schreibt `report.md`,
 `report_title.txt` (beide git-ignoriert), `LATEST.md` und `data/seen.json`.
 
 ### Konfiguration
@@ -123,3 +131,4 @@ LATEST.md                   # letzter Report mit Funden
   daily-check.yml           # täglicher Check (Cron + manuell)
   ci.yml                    # Tests & Konfig-Validierung bei jedem Push
 ```
+

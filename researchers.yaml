@@ -143,6 +143,161 @@ researchers:
   - name: Samuel Marks
     categories: [interpretability-safety]
 
+  # ── Goodfire: belegte Interpretability-Forschungsbeiträge ─────────────
+  # Stand 2026-11-15; Quellen je Person: docs/goodfire-researchers.md.
+  # goodfire = belegter Forschungsbezug, einschließlich Fellows/früherer
+  # Zugehörigkeit; keine Behauptung einer aktuellen Festanstellung.
+  - name: Aaditya Prasad
+    categories: [interpretability-safety, goodfire]
+  - name: Aiden Swann
+    categories: [interpretability-safety, goodfire]
+  - name: Akshaj Jain
+    categories: [interpretability-safety, goodfire]
+  - name: Andrew Lee
+    categories: [interpretability-safety, goodfire]
+    sources: [arxiv]            # Namensgleichheit: vorerst ohne OpenAlex-Namenssuche
+    arxiv_categories: ["cs.", "stat.", "q-bio."]
+  - name: Archa Jain
+    categories: [interpretability-safety, goodfire]
+  - name: Atticus Geiger
+    categories: [interpretability-safety, goodfire]
+  - name: Barak Widawsky
+    categories: [interpretability-safety, goodfire]
+  - name: Can Rager
+    categories: [interpretability-safety, goodfire]
+  - name: Ching Fang
+    categories: [interpretability-safety, goodfire]
+  - name: Chris Earls
+    categories: [interpretability-safety, goodfire]
+  - name: Connor Watts
+    categories: [interpretability-safety, goodfire]
+  - name: Curt Tigges
+    categories: [interpretability-safety, goodfire]
+  - name: Dan Braun
+    categories: [interpretability-safety, goodfire]
+  - name: Daniel Balsam
+    aliases: [Dan Balsam]
+    categories: [interpretability-safety, goodfire]
+  - name: Daniel Wurgaft
+    categories: [interpretability-safety, goodfire]
+  - name: Dhruvil Gala
+    categories: [interpretability-safety, goodfire]
+  - name: Dron Hazra
+    categories: [interpretability-safety, goodfire]
+  - name: Ekdeep Singh Lubana
+    categories: [interpretability-safety, goodfire]
+  - name: Elana Simon
+    categories: [interpretability-safety, goodfire]
+  - name: Eric Bigelow
+    aliases: [Eric J. Bigelow]
+    categories: [interpretability-safety, goodfire]
+  - name: Eric Ho
+    categories: [interpretability-safety, goodfire]
+    sources: [arxiv]            # Namensgleichheit: vorerst ohne OpenAlex-Namenssuche
+    arxiv_categories: ["cs.", "stat.", "q-bio."]
+  - name: Eric J. Michaud
+    categories: [interpretability-safety, goodfire]
+  - name: Fatih Dinc
+    categories: [interpretability-safety, goodfire]
+  - name: Fenil Doshi
+    categories: [interpretability-safety, goodfire]
+  - name: Jack Merullo
+    categories: [interpretability-safety, goodfire]
+  - name: Jatin Nainani
+    categories: [interpretability-safety, goodfire]
+  - name: Kamesh Krishnamurthy
+    categories: [interpretability-safety, goodfire]
+  - name: Lee Sharkey
+    categories: [interpretability-safety, goodfire]
+  - name: Leon Bergen
+    categories: [interpretability-safety, goodfire]
+  - name: Linas Nasvytis
+    categories: [interpretability-safety, goodfire]
+  - name: Liv Gorton
+    categories: [interpretability-safety, goodfire]
+  - name: Lucius Bushnaq
+    categories: [interpretability-safety, goodfire]
+  - name: Mark Bissell
+    categories: [interpretability-safety, goodfire]
+  - name: Matt Feiszli
+    categories: [interpretability-safety, goodfire]
+  - name: Matthew Kowal
+    categories: [interpretability-safety, goodfire]
+  - name: Max Loeffler
+    categories: [interpretability-safety, goodfire]
+  - name: Michael Anderson
+    categories: [interpretability-safety, goodfire]
+    sources: [arxiv]            # Namensgleichheit: vorerst ohne OpenAlex-Namenssuche
+    arxiv_categories: ["cs.", "stat.", "q-bio."]
+  - name: Michael Jae Byun
+    aliases: [Michael Byun]
+    categories: [interpretability-safety, goodfire]
+  - name: Michael Pearce
+    aliases: [Michael T. Pearce]
+    categories: [interpretability-safety, goodfire]
+  - name: Mozes Jacobs
+    categories: [interpretability-safety, goodfire]
+  - name: Murat Cubuktepe
+    categories: [interpretability-safety, goodfire]
+  - name: Myra Deng
+    categories: [interpretability-safety, goodfire]
+  - name: Nam Nguyen
+    categories: [interpretability-safety, goodfire]
+    sources: [arxiv]            # Namensgleichheit: vorerst ohne OpenAlex-Namenssuche
+    arxiv_categories: ["cs.", "stat.", "q-bio."]
+  - name: Neehar Kondapaneni
+    categories: [interpretability-safety, goodfire]
+  - name: Nicholas Wang
+    aliases: [Nicholas K. Wang, Nick Wang]
+    categories: [interpretability-safety, goodfire]
+    sources: [arxiv]            # Namensgleichheit: vorerst ohne OpenAlex-Namenssuche
+    arxiv_categories: ["cs.", "stat.", "q-bio."]
+  - name: Nick Cammarata
+    categories: [interpretability-safety, goodfire]
+  - name: Oliver Clive-Griffin
+    categories: [interpretability-safety, goodfire]
+  - name: Owen Lewis
+    categories: [interpretability-safety, goodfire]
+  - name: Raphaël Sarfati
+    aliases: [Raphael Sarfati]
+    categories: [interpretability-safety, goodfire]
+  - name: Ryan Panwar
+    categories: [interpretability-safety, goodfire]
+  - name: Ryo Yamamoto
+    categories: [interpretability-safety, goodfire]
+  - name: Santiago Aranguri
+    categories: [interpretability-safety, goodfire]
+  - name: Satchel Grant
+    categories: [interpretability-safety, goodfire]
+  - name: Sheridan Feucht
+    categories: [interpretability-safety, goodfire]
+  - name: Siddharth Boppana
+    categories: [interpretability-safety, goodfire]
+  - name: Sidharth Baskaran
+    categories: [interpretability-safety, goodfire]
+  - name: Srihita Vatsavaya
+    aliases: [Siri Vatsavaya]
+    categories: [interpretability-safety, goodfire]
+  - name: Tal Haklay
+    categories: [interpretability-safety, goodfire]
+  - name: Thariq Shihipar
+    categories: [interpretability-safety, goodfire]
+  - name: Thomas Dooms
+    categories: [interpretability-safety, goodfire]
+  - name: Thomas Fel
+    categories: [interpretability-safety, goodfire]
+  - name: Thomas Icard
+    categories: [interpretability-safety, goodfire]
+  - name: Thomas McGrath
+    aliases: [Tom McGrath]
+    categories: [interpretability-safety, goodfire]
+  - name: Tristan Gallent
+    categories: [interpretability-safety, goodfire]
+  - name: Usha Bhalla
+    categories: [interpretability-safety, goodfire]
+  - name: Vasudev Shyam
+    categories: [interpretability-safety, goodfire]
+
   # ── Theoretical AI / Intelligence ────────────────────────────────────
   - name: Blaise Agüera y Arcas
     categories: [theoretical-ai]
@@ -296,3 +451,4 @@ researchers:
   - name: Timothy Michael Bennett
     aliases: [Michael Timothy Bennett]
     categories: [eigene-liste]  # vermutlich Michael Timothy Bennett (ANU, AGI-Theorie)
+
