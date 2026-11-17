@@ -10,6 +10,49 @@ from .model import Publication
 Findings = list[tuple[Researcher, list[Publication]]]
 
 
+def deduplicate_findings(findings: Findings) -> Findings:
+    """List each work once, under its first researcher, without changing inputs.
+
+    Canonical IDs or normalised titles connect records across authors/sources.
+    Resolve all connections before selecting representatives: a later record
+    can link two earlier records through its ID and title respectively.
+    """
+    records = [
+        (group, publication)
+        for group, (_, publications) in enumerate(findings)
+        for publication in publications
+    ]
+    parents = list(range(len(records)))
+    keys: dict[tuple[str, str], int] = {}
+
+    def root(index: int) -> int:
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    for index, (_, publication) in enumerate(records):
+        for kind, value in (("pid", publication.pid), ("title", publication.title_id)):
+            if not value:
+                continue
+            key = (kind, value)
+            if key in keys:
+                first, other = sorted((root(index), root(keys[key])))
+                parents[other] = first
+            else:
+                keys[key] = index
+
+    unique: list[list[Publication]] = [[] for _ in findings]
+    for index, (group, publication) in enumerate(records):
+        if root(index) == index:
+            unique[group].append(publication)
+    return [
+        (researcher, publications)
+        for (researcher, _), publications in zip(findings, unique)
+        if publications
+    ]
+
+
 def _format_publication(publication: Publication) -> str:
     if publication.source == "arxiv":
         source = "arXiv"
@@ -27,17 +70,22 @@ def _format_publication(publication: Publication) -> str:
 
 def render_report(findings: Findings, run_date: dt.date,
                   arxiv_days: int, openalex_days: int) -> tuple[str, str]:
-    """Liefert (Issue-Titel, Markdown-Body)."""
+    """Liefert (Issue-Titel, Markdown-Body), mit jeder Arbeit genau einmal."""
+    findings = deduplicate_findings(findings)
     total = sum(len(publications) for _, publications in findings)
     title = f"🧠 Neue Publikationen ({total}) – {run_date.isoformat()}"
 
     lines = [
         f"Automatische Abfrage vom **{run_date.isoformat()}**: "
-        f"**{total}** neue Publikation(en) von **{len(findings)}** beobachteten Person(en).",
+        f"**{total}** neue Publikation(en), einmalig gelistet unter "
+        f"**{len(findings)}** beobachteten Person(en).",
         "",
         f"_Suchfenster nach Veröffentlichungsdatum: arXiv {arxiv_days} Tage, "
         f"OpenAlex {openalex_days} Tage. Bereits gemeldete Einträge werden übersprungen; "
         "reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._",
+        "",
+        "_Gemeinsame Arbeiten erscheinen nur bei der ersten zugeordneten Person "
+        "in der alphabetischen Report-Reihenfolge; das bezeichnet keine Erstautorenschaft._",
         "",
     ]
     for researcher, publications in findings:

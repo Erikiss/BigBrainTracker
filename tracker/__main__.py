@@ -16,7 +16,7 @@ from pathlib import Path
 from . import arxiv, openalex
 from .config import Researcher, load_config
 from .model import Publication
-from .report import render_latest, render_report
+from .report import deduplicate_findings, render_latest, render_report
 from .state import State
 
 _SOURCE_MODULES = {"arxiv": arxiv, "openalex": openalex}
@@ -116,6 +116,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"[{index}/{len(enabled)}] {person.name}: {len(new_publications)} neu", flush=True)
 
     findings.sort(key=lambda item: item[0].name.casefold())
+    # Keep the per-person seen state above, but display coauthored works once.
+    findings = deduplicate_findings(findings)
     total = sum(len(publications) for _, publications in findings)
 
     if not args.dry_run:

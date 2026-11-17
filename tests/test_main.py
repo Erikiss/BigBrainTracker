@@ -1,11 +1,14 @@
 import datetime as dt
+import io
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 from unittest import mock
 
 from tracker.__main__ import main
 from tracker.model import Publication
+from tracker.state import State
 
 CONFIG = """\
 researchers:
@@ -98,6 +101,63 @@ class MainTests(unittest.TestCase):
             self.assertEqual(exit_code, 0)
             self.assertFalse((tmp / "report.md").exists())
             self.assertFalse((tmp / "data" / "seen.json").exists())
+
+    def test_shared_paper_reported_once_but_seen_for_both_authors(self):
+        with tempfile.TemporaryDirectory() as tmp_name:
+            tmp = Path(tmp_name)
+            (tmp / "researchers.yaml").write_text(
+                "researchers:\n  - name: Jane Doe\n  - name: John Doe\n",
+                encoding="utf-8",
+            )
+            shared = _publication("arxiv:2611.07071", "Gemeinsame Arbeit")
+            shared.authors = ["Jane Doe", "John Doe"]
+            output = io.StringIO()
+            with mock.patch("tracker.arxiv.fetch", return_value=[shared]), \
+                    mock.patch("tracker.openalex.fetch", return_value=[]), \
+                    redirect_stdout(output):
+                exit_code = main(self._argv(tmp))
+
+            self.assertEqual(exit_code, 0)
+            for filename in ("report.md", "LATEST.md"):
+                report = (tmp / filename).read_text(encoding="utf-8")
+                self.assertEqual(report.count("[Gemeinsame Arbeit]"), 1)
+                self.assertIn("### Jane Doe", report)
+                self.assertNotIn("### John Doe", report)
+            self.assertIn("(1)", (tmp / "report_title.txt").read_text())
+            self.assertIn("Fertig: 1 neue Publikation(en)", output.getvalue())
+            state = State.load(tmp / "data" / "seen.json")
+            for name in shared.authors:
+                self.assertTrue(state.is_seen(name, shared), name)
+
+            latest = (tmp / "LATEST.md").read_text(encoding="utf-8")
+            (tmp / "report.md").unlink()
+            with mock.patch("tracker.arxiv.fetch", return_value=[shared]), \
+                    mock.patch("tracker.openalex.fetch", return_value=[]):
+                exit_code = main(self._argv(tmp))
+            self.assertEqual(exit_code, 0)
+            self.assertFalse((tmp / "report.md").exists())
+            self.assertEqual((tmp / "LATEST.md").read_text(encoding="utf-8"), latest)
+
+    def test_dry_run_deduplicates_shared_paper_without_writing_state(self):
+        with tempfile.TemporaryDirectory() as tmp_name:
+            tmp = Path(tmp_name)
+            (tmp / "researchers.yaml").write_text(
+                "researchers:\n  - name: Jane Doe\n  - name: John Doe\n",
+                encoding="utf-8",
+            )
+            shared = _publication("arxiv:2611.07071", "Gemeinsame Arbeit")
+            output = io.StringIO()
+            with mock.patch("tracker.arxiv.fetch", return_value=[shared]), \
+                    mock.patch("tracker.openalex.fetch", return_value=[]), \
+                    redirect_stdout(output):
+                exit_code = main(self._argv(tmp) + ["--dry-run"])
+
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(output.getvalue().count("[Gemeinsame Arbeit]"), 1)
+            self.assertIn("Neue Publikationen (1)", output.getvalue())
+            self.assertIn("Fertig: 1 neue Publikation(en)", output.getvalue())
+            for path in ("report.md", "report_title.txt", "LATEST.md", "data/seen.json"):
+                self.assertFalse((tmp / path).exists(), path)
 
     def test_all_sources_failing_marks_run_red(self):
         with tempfile.TemporaryDirectory() as tmp_name:

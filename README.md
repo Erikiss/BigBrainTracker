@@ -18,7 +18,13 @@ Einträge) etwas Neues publiziert hat – und meldet Funde als **GitHub-Issue**.
      zusätzlich Journal- und Konferenzveröffentlichungen ab.
 3. Bereits gemeldete Publikationen stehen in [`data/seen.json`](data/seen.json) und
    werden übersprungen; Duplikate derselben Arbeit über beide Quellen hinweg
-   werden zusammengeführt (arXiv-ID/DOI + Titelabgleich).
+   werden zusammengeführt (arXiv-ID/DOI + Titelabgleich). Auch wenn mehrere
+   beobachtete Personen an einer Arbeit beteiligt sind, erscheint sie im Report
+   **nur einmal**, bei der ersten zugeordneten Person in alphabetischer
+   Report-Reihenfolge. Leere Personenabschnitte entfallen; die Gesamtzahl zählt
+   eindeutige Arbeiten. Die Zuordnung bezeichnet keine Erstautorenschaft.
+   Der gespeicherte Sichtungsstand wird weiterhin für alle gefundenen
+   beteiligten Personen aktualisiert.
 4. Gibt es Neues, passiert dreierlei:
    - ein **Issue** mit dem Label `publikationen` wird erstellt (Titel z. B.
      „🧠 Neue Publikationen (7) – 2026-07-15“),
