@@ -1,32 +1,29 @@
-# 🧠 Neue Publikationen (11) – 2026-11-19
+# 🧠 Neue Publikationen (8) – 2026-11-20
 
-_Letzter Lauf mit Funden: 2026-11-19 15:12 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-11-20 04:23 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-11-19**: **11** neue Publikation(en), einmalig gelistet unter **4** beobachteten Person(en).
+Automatische Abfrage vom **2026-11-20**: **8** neue Publikation(en), einmalig gelistet unter **4** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
 _Gemeinsame Arbeiten erscheinen nur bei der ersten zugeordneten Person in der alphabetischen Report-Reihenfolge; das bezeichnet keine Erstautorenschaft._
 
-### Oliver Clive-Griffin _(interpretability-safety, goodfire)_
+### Demis Hassabis _(foundation-models)_
 
-- **2026-10-14** · [Interpreting Language Model Parameters](https://doi.org/10.48550/arxiv.2610.20748) — OpenAlex · arXiv (Cornell University)
+- **2026-11-17** · [AlphaGenome 2 predicts regulatory activity and variant effects across cell states](https://doi.org/10.64898/2026.11.11.765857) — OpenAlex · bioRxiv (Cold Spring Harbor Laboratory)
 
-### Owen Lewis _(interpretability-safety, goodfire)_
+### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-10-14** · [A Phenomenology of Neural Geometry in Vision-Language-Action Models](https://doi.org/10.48550/arxiv.2610.20840) — OpenAlex · arXiv (Cornell University)
-- **2026-10-14** · [Multi-Dimensional Featurizers Yield Fine-Grained Steering and Data Shaping in Robot Foundation Models](https://doi.org/10.48550/arxiv.2610.20767) — OpenAlex · arXiv (Cornell University)
-- **2026-10-14** · [Causal Analysis of Robot Foundation Models Enables Efficiency Gains](https://doi.org/10.48550/arxiv.2610.20750) — OpenAlex · arXiv (Cornell University)
-- **2026-10-13** · [Adjoint-based a posteriori error analysis for semi-explicit index-1 and Hessenberg index-2 differential-algebraic equations](https://doi.org/10.1007/s10543-026-01155-3) — OpenAlex · BIT Numerical Mathematics
+- **2026-11-18** · [Stress granule transcript contrasts between colorectal cancer compartments depend on scoring and depth](https://doi.org/10.64898/2026.11.15.766839) — OpenAlex · bioRxiv (Cold Spring Harbor Laboratory)
+- **2026-11-18** · [Metabolic adaptations from late gestation to early postpartum in dairy sheep: integration of plasma biochemistry and untargeted metabolomics](https://doi.org/10.5194/aab-69-681-2026) — OpenAlex · Archives animal breeding/Archiv für Tierzucht
+- **2026-11-18** · [Construction of cell factories, and multi-enzymatic and chemoenzymatic cascades to enable the efficient production of alkaloids](https://doi.org/10.1039/d6np00031b) — OpenAlex · Natural Product Reports
+- **2026-11-18** · [Hollow NiS/Ni3S4 heterostructured microspheres with regulated sulfur-related defect states for enhanced asymmetric supercapacitor performance](https://doi.org/10.1016/j.est.2026.125832) — OpenAlex · Journal of Energy Storage
+- **2026-11-18** · [Manipulating Spatial Charge Distribution and Electronic Structure in Se‐Doped Hollow Heterostructures for Enhanced Redox Kinetics in Li‐S Batteries](https://doi.org/10.1002/adfm.79723) — OpenAlex · Advanced Functional Materials
 
-### Ryo Yamamoto _(interpretability-safety, goodfire)_
+### Quoc Le _(foundation-models)_
 
-- **2026-11-11** · [Diagnosis and management of refeeding syndrome in critically ill patients: protocol for a systematic review (Stage 1 of the DREAM-ICU project: Delphi on Refeeding syndrome: Expert Agreement on Management in ICU)](https://doi.org/10.17605/osf.io/w2378) — OpenAlex · Open Science Framework
-- **2026-11-09** · [Absolute quantification and profiling of cellular tRNAs by nanopore sequencing and a deep learning classifier](https://doi.org/10.1038/s41467-026-78563-0) — OpenAlex · Nature Communications
-- **2026-11-06** · [Reply - Letter to the editor: Interpretation of evidence-based feeding protocols in critically ill adults](https://doi.org/10.1016/j.clnesp.2026.105242) — OpenAlex · Clinical Nutrition ESPEN
-- **2026-11-01** · [EPCO-15 CSF cfDNA Enables Longitudinal Genomic Profiling and Reveals Treatment-Associated Clonal Dynamics in Primary CNS Lymphoma](https://doi.org/10.1093/neuonc/noag189.015) — OpenAlex · Neuro-Oncology
-- **2026-10-26** · [Current nutrition practices and additional reimbursement of intensive care units in Japan: A cross‐sectional survey study](https://doi.org/10.1002/jpen.70161) — OpenAlex · Journal of Parenteral and Enteral Nutrition
+- **2026-11-18** · [Pseudomembranous invasive tracheobronchial aspergillosis in an apparently immunocompetent patient with necrotizing pneumonia: a case report and brief review of the literature](https://doi.org/10.1186/s43168-026-00723-z) — OpenAlex · Egyptian Journal of Bronchology
 
-### Tristan Gallent _(interpretability-safety, goodfire)_
+### Surya Ganguli _(neuroscience)_
 
-- **2026-10-20** · [Predicting cell-state-specific gene regulation from DNA across species](https://doi.org/10.64898/2026.10.19.760026) — OpenAlex · bioRxiv (Cold Spring Harbor Laboratory)
+- **2026-11-19** · [Revealing Pathway Interactions in Network Computations with Complete Path Contribution](https://arxiv.org/abs/2611.26101) — arXiv · cs.LG
