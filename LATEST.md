@@ -1,51 +1,27 @@
-# 🧠 Neue Publikationen (15) – 2026-11-25
+# 🧠 Neue Publikationen (6) – 2026-11-26
 
-_Letzter Lauf mit Funden: 2026-11-25 14:52 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
+_Letzter Lauf mit Funden: 2026-11-26 16:17 UTC – erzeugt von [daily-check](.github/workflows/daily-check.yml)._
 
-Automatische Abfrage vom **2026-11-25**: **15** neue Publikation(en), einmalig gelistet unter **9** beobachteten Person(en).
+Automatische Abfrage vom **2026-11-26**: **6** neue Publikation(en), einmalig gelistet unter **4** beobachteten Person(en).
 
 _Suchfenster nach Veröffentlichungsdatum: arXiv 14 Tage, OpenAlex 45 Tage. Bereits gemeldete Einträge werden übersprungen; reine Namenssuche kann vereinzelt Fehltreffer (Namensgleichheit) enthalten._
 
 _Gemeinsame Arbeiten erscheinen nur bei der ersten zugeordneten Person in der alphabetischen Report-Reihenfolge; das bezeichnet keine Erstautorenschaft._
 
-### Antonio Torralba _(computer-vision)_
-
-- **2026-11-24** · [Subliminal Learning Crosses Modalities](https://arxiv.org/abs/2611.31870) — arXiv · cs.LG
-
-### Bruno Olshausen _(neuroscience)_
-
-- **2026-11-24** · [Reconstructing Natural Images from Brain Activity during Natural Vision](https://arxiv.org/abs/2611.31989) — arXiv · cs.CV
-
-### Cordelia Schmid _(computer-vision)_
-
-- **2026-11-23** · [Hi3R-VLA: Grounding Semantics and Actions in 3D](https://arxiv.org/abs/2611.31535) — arXiv · cs.RO
-
 ### Fei-Fei Li _(foundation-models, computer-vision)_
 
-- **2026-11-24** · [Correction: Development and validation of a predictive model for postoperative urinary retention following pelvic organ prolapse surgery: a retrospective study](https://doi.org/10.3389/fmed.2026.2039308) — OpenAlex · Frontiers in Medicine
-- **2026-11-24** · [A Stable Imidazopyridinium-Linked Cobalt(II)-Porphyrin Covalent Organic Framework for Sunlight-Driven CO2 Cycloaddition](https://doi.org/10.1021/acs.inorgchem.6c04524) — OpenAlex · Inorganic Chemistry
-- **2026-11-24** · [HEGA: Hybrid Embedding-Generative Approach for Schema-Free Unsupervised Knowledge Graph Construction](https://doi.org/10.1007/978-981-92-8146-6_16) — OpenAlex · Communications in computer and information science
-- **2026-11-24** · [Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems](https://arxiv.org/abs/2611.32606) — arXiv · cs.MA
-
-### Jason Wei _(llms-scaling)_
-
-- **2026-11-24** · [To Critic Or Not To Critic](https://arxiv.org/abs/2611.32013) — arXiv · cs.LG
-
-### Mark Bissell _(interpretability-safety, goodfire)_
-
-- **2026-11-24** · [Long COVID burden attributable to preexisting comorbidity: a retrospective cohort study](https://doi.org/10.1016/j.lana.2026.101706) — OpenAlex · The Lancet Regional Health - Americas
+- **2026-11-25** · [Epithelial RNA detection and tissue protein abundance of TMEM87A in colorectal cancer: analysis code and derived data](https://doi.org/10.5281/zenodo.24535177) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
+- **2026-11-25** · [Corrected 30 m cropland map of China for 2021](https://doi.org/10.5281/zenodo.24531409) — OpenAlex · Zenodo (CERN European Organization for Nuclear Research)
+- **2026-11-25** · [Hydraulic characteristics and coarse particle lifting performance of a large-area-ratio annular jet pump](https://doi.org/10.1016/j.icheatmasstransfer.2026.113221) — OpenAlex · International Communications in Heat and Mass Transfer
 
 ### Michael Mahoney _(optimization-mathematics)_
 
-- **2026-11-24** · [A new angle on matrix-vector complexity](https://arxiv.org/abs/2611.31955) — arXiv · cs.DS
+- **2026-11-25** · [CovNovBench: A Benchmark for Evaluating Time Series Foundation Models under Covariate Novelty](https://arxiv.org/abs/2611.33732) — arXiv · cs.LG
 
-### Quoc Le _(foundation-models)_
+### Nathan Srebro _(optimization-mathematics)_
 
-- **2026-11-24** · [CXCR4-targeting near-infrared fluorescence imaging probe for selective detection of peritoneal metastasis of colorectal cancer](https://doi.org/10.1007/s13346-026-02259-7) — OpenAlex · Drug Delivery and Translational Research
-- **2026-11-24** · [SpineCLIP: A Knowledge Base Enhanced Contrastive Multimodal Learning for Low Back Pain Diagnosis](https://doi.org/10.1007/978-981-92-8233-3_13) — OpenAlex · Communications in computer and information science
+- **2026-11-25** · [Tune for Retention, Not Just Gain: SFT Forgets Far Less than You Think](https://arxiv.org/abs/2611.34579) — arXiv · cs.LG
 
-### Sanjeev Arora _(optimization-mathematics)_
+### Yoshua Bengio _(foundation-models)_
 
-- **2026-11-23** · [The Temporal Residual: Fast and Effective Retrofitting of Latent Feedback into Pretrained Language Models](https://arxiv.org/abs/2611.29843) — arXiv · cs.CL
-- **2026-11-21** · [Does a Frontier Large Language Model Know What It Can Solve? A 100-Conjecture Calibration Study](https://arxiv.org/abs/2611.28827) — arXiv · cs.AI
-- **2026-11-21** · [Improving semantic equivalence in research-level math formalization](https://arxiv.org/abs/2611.28819) — arXiv · cs.AI
+- **2026-11-08** · [Chain-of-Thought Is Not Explainability](https://doi.org/10.48550/arxiv.2611.31271) — OpenAlex · arXiv
