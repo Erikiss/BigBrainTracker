@@ -11,6 +11,7 @@ import requests
 USER_AGENT = "BigBrainTracker/1.0 (+https://github.com/Erikiss/BigBrainTracker)"
 
 _RETRY_STATUS = {429, 500, 502, 503, 504}
+MAX_RETRY_AFTER_SECONDS = 60
 
 _session = requests.Session()
 _session.headers["User-Agent"] = USER_AGENT
@@ -18,6 +19,10 @@ _session.headers["User-Agent"] = USER_AGENT
 
 class HttpError(RuntimeError):
     """Request failed after all retries (or with a non-retryable status)."""
+
+
+class RateLimitError(HttpError):
+    """Request was rate-limited beyond the retry budget."""
 
 
 def _retry_delay(response: requests.Response, attempt: int, backoff: float) -> float:
@@ -57,5 +62,12 @@ def get(url: str, params: dict | None = None, *,
         if attempt < retries:
             delay = _retry_delay(response, attempt, backoff) if response is not None else \
                 backoff * (2 ** attempt)
+            if response is not None and response.status_code == 429 \
+                    and delay > MAX_RETRY_AFTER_SECONDS:
+                raise RateLimitError(
+                    f"HTTP 429 mit Retry-After {delay:.0f}s für {response.url}"
+                )
             time.sleep(delay)
+    if response is not None and response.status_code == 429:
+        raise RateLimitError(str(last_error))
     raise HttpError(str(last_error))

@@ -13,7 +13,7 @@ import os
 import sys
 from pathlib import Path
 
-from . import arxiv, openalex
+from . import arxiv, http, openalex
 from .config import Researcher, load_config
 from .model import Publication
 from .report import deduplicate_findings, render_latest, render_report
@@ -54,7 +54,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
-def _collect(person: Researcher, cutoffs: dict[str, dt.date]) -> tuple[list[Publication], int, int]:
+def _collect(person: Researcher, cutoffs: dict[str, dt.date]
+             ) -> tuple[list[Publication], int, int, bool]:
     publications: list[Publication] = []
     fetches_ok = 0
     fetches_failed = 0
@@ -64,10 +65,14 @@ def _collect(person: Researcher, cutoffs: dict[str, dt.date]) -> tuple[list[Publ
         try:
             publications.extend(module.fetch(person, cutoffs[source_name]))
             fetches_ok += 1
+        except http.RateLimitError as exc:
+            fetches_failed += 1
+            print(f"WARNUNG {person.name} [{source_name}]: {exc}", file=sys.stderr, flush=True)
+            return publications, fetches_ok, fetches_failed, True
         except Exception as exc:  # noqa: BLE001 – eine Quelle/Person darf den Lauf nicht stoppen
             fetches_failed += 1
             print(f"WARNUNG {person.name} [{source_name}]: {exc}", file=sys.stderr, flush=True)
-    return publications, fetches_ok, fetches_failed
+    return publications, fetches_ok, fetches_failed, False
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -93,10 +98,12 @@ def main(argv: list[str] | None = None) -> int:
     findings: list[tuple[Researcher, list[Publication]]] = []
     fetches_ok = 0
     fetches_failed = 0
+    rate_limit_aborted = False
     for index, person in enumerate(enabled, start=1):
-        collected, ok, failed = _collect(person, cutoffs)
+        collected, ok, failed, rate_limited = _collect(person, cutoffs)
         fetches_ok += ok
         fetches_failed += failed
+        rate_limit_aborted = rate_limit_aborted or rate_limited
 
         new_publications: list[Publication] = []
         titles_this_run: set[str] = set()
@@ -114,6 +121,8 @@ def main(argv: list[str] | None = None) -> int:
                 for publication in new_publications:
                     state.mark_seen(person.name, publication, today)
         print(f"[{index}/{len(enabled)}] {person.name}: {len(new_publications)} neu", flush=True)
+        if rate_limited:
+            break
 
     findings.sort(key=lambda item: item[0].name.casefold())
     # Keep the per-person seen state above, but display coauthored works once.
@@ -125,6 +134,12 @@ def main(argv: list[str] | None = None) -> int:
         f"Quellen-Abrufe ok={fetches_ok}, fehlgeschlagen={fetches_failed}.",
         flush=True,
     )
+    if rate_limit_aborted:
+        print(
+            "Rate-Limit erreicht – Lauf abgebrochen; es wurden keine Daten gespeichert.",
+            file=sys.stderr,
+        )
+        return 1
     if fetches_failed:
         print(
             f"{fetches_failed} Quellenabruf(e) fehlgeschlagen – "

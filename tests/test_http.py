@@ -23,6 +23,19 @@ class HttpTests(unittest.TestCase):
         self.assertIs(result, success)
         sleep.assert_called_once_with(30.0)
 
+    def test_long_retry_after_fails_without_waiting(self):
+        limited = requests.Response()
+        limited.status_code = 429
+        limited.url = "https://example.com"
+        limited.headers["Retry-After"] = str(http.MAX_RETRY_AFTER_SECONDS + 1)
+
+        with mock.patch.object(http._session, "get", return_value=limited), \
+                mock.patch.object(http.time, "sleep") as sleep:
+            with self.assertRaises(http.RateLimitError):
+                http.get("https://example.com")
+
+        sleep.assert_not_called()
+
     def test_retry_after_http_date_is_respected(self):
         response = requests.Response()
         response.headers["Retry-After"] = "Wed, 21 Oct 2099 07:28:00 GMT"
