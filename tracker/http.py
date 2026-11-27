@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import datetime as dt
+from email.utils import parsedate_to_datetime
 import time
 
 import requests
@@ -18,10 +20,28 @@ class HttpError(RuntimeError):
     """Request failed after all retries (or with a non-retryable status)."""
 
 
+def _retry_delay(response: requests.Response, attempt: int, backoff: float) -> float:
+    delay = backoff * (2 ** attempt)
+    retry_after = response.headers.get("Retry-After", "").strip()
+    if not retry_after:
+        return delay
+    try:
+        return max(delay, float(retry_after))
+    except ValueError:
+        try:
+            retry_at = parsedate_to_datetime(retry_after)
+            if retry_at.tzinfo is None:
+                retry_at = retry_at.replace(tzinfo=dt.timezone.utc)
+            return max(delay, (retry_at - dt.datetime.now(dt.timezone.utc)).total_seconds())
+        except (TypeError, ValueError, OverflowError):
+            return delay
+
+
 def get(url: str, params: dict | None = None, *,
         timeout: float = 30.0, retries: int = 3, backoff: float = 2.0) -> requests.Response:
     last_error: Exception | None = None
     for attempt in range(retries + 1):
+        response = None
         try:
             response = _session.get(url, params=params, timeout=timeout)
             if response.status_code in _RETRY_STATUS:
@@ -35,5 +55,7 @@ def get(url: str, params: dict | None = None, *,
             # 4xx (außer 429): nicht sinnvoll wiederholbar
             raise HttpError(str(exc)) from exc
         if attempt < retries:
-            time.sleep(backoff * (2 ** attempt))
+            delay = _retry_delay(response, attempt, backoff) if response is not None else \
+                backoff * (2 ** attempt)
+            time.sleep(delay)
     raise HttpError(str(last_error))

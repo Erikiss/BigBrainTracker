@@ -120,6 +120,19 @@ def main(argv: list[str] | None = None) -> int:
     findings = deduplicate_findings(findings)
     total = sum(len(publications) for _, publications in findings)
 
+    print(
+        f"Fertig: {total} neue Publikation(en) bei {len(findings)} Person(en); "
+        f"Quellen-Abrufe ok={fetches_ok}, fehlgeschlagen={fetches_failed}.",
+        flush=True,
+    )
+    if fetches_failed:
+        print(
+            f"{fetches_failed} Quellenabruf(e) fehlgeschlagen – "
+            "Lauf wird als unvollständig markiert.",
+            file=sys.stderr,
+        )
+        return 1
+
     if not args.dry_run:
         state.prune(today)
         state.save()
@@ -137,14 +150,6 @@ def main(argv: list[str] | None = None) -> int:
                 encoding="utf-8",
             )
 
-    print(
-        f"Fertig: {total} neue Publikation(en) bei {len(findings)} Person(en); "
-        f"Quellen-Abrufe ok={fetches_ok}, fehlgeschlagen={fetches_failed}.",
-        flush=True,
-    )
-    if fetches_failed and fetches_failed >= fetches_ok:
-        print("Zu viele fehlgeschlagene Abrufe – Lauf wird als Fehler markiert.", file=sys.stderr)
-        return 1
     return 0
 
 

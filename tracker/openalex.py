@@ -13,7 +13,7 @@ from .model import Publication
 from .names import matches
 
 API_URL = "https://api.openalex.org/works"
-MIN_INTERVAL_SECONDS = 0.25
+MIN_INTERVAL_SECONDS = 1.0
 PER_PAGE = 50
 
 _SELECT = "id,display_name,publication_date,doi,primary_location,authorships"

@@ -169,6 +169,17 @@ class MainTests(unittest.TestCase):
                 exit_code = main(self._argv(tmp))
             self.assertEqual(exit_code, 1)
 
+    def test_partial_source_failure_marks_run_incomplete(self):
+        with tempfile.TemporaryDirectory() as tmp_name:
+            tmp = Path(tmp_name)
+            (tmp / "researchers.yaml").write_text(CONFIG, encoding="utf-8")
+            with mock.patch("tracker.arxiv.fetch", side_effect=RuntimeError("HTTP 429")), \
+                    mock.patch("tracker.openalex.fetch", return_value=[]):
+                exit_code = main(self._argv(tmp))
+            self.assertEqual(exit_code, 1)
+            for path in ("report.md", "report_title.txt", "LATEST.md", "data/seen.json"):
+                self.assertFalse((tmp / path).exists(), path)
+
 
 if __name__ == "__main__":
     unittest.main()
